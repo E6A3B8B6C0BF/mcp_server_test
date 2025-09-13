@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_TOKEN}",
+        "DEFAULT_REPOSITORY": "E6A3B8B6C0BF/mcp_server_test"
+      }
+    }
+  }
+}

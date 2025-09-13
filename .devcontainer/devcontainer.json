@@ -1,0 +1,50 @@
+{
+  "name": "mcp",
+  "dockerComposeFile": "compose.yml",
+  "service": "mcp",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "pnpm install",
+  "forwardPorts": [
+    3005
+  ],
+  "remoteUser": "node",
+  "customizations": {
+    "github.copilot.chat.generateTests.codeLens": true,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "christian-kohler.path-intellisense",
+        "codezombiech.gitignore",
+        "Dart-Code.dart-code",
+        "Dart-Code.flutter",
+        "dbaeumer.vscode-eslint",
+        "denoland.vscode-deno",
+        "esbenp.prettier-vscode",
+        "figma.figma-vscode-extension",
+        "GitHub.copilot-chat",
+        "GitHub.copilot",
+        "github.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "glenn2223.live-sass",
+        "golang.Go",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-containers",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode.live-server",
+        "ms-vscode.vscode-github-issue-notebooks",
+        "openai.chatgpt",
+        "ritwickdey.LiveServer",
+        "Shopify.ruby-lsp",
+        "streetsidesoftware.code-spell-checker",
+        "stylelint.vscode-stylelint",
+        "WallabyJs.console-ninja",
+        "WallabyJs.quokka-vscode",
+        "WallabyJs.wallaby-vscode"
+      ]
+    }
+  }
+}
