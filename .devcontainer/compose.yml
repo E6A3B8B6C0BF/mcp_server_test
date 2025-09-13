@@ -17,4 +17,5 @@ services:
       - LANG=ja_JP.UTF-8
       - TZ=Asia/Tokyo
       - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - GITHUB_PERSONAL_ACCESS_TOKEN=${GITHUB_TOKEN}
     user: node
