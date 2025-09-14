@@ -9,13 +9,12 @@ services:
     container_name: mcp
     volumes:
       - ..:/workspace:cached
-      - ../.env:/workspace/.env:cached
     ports:
       - "3005:3005"
     command: sleep infinity
+    env_file:
+      - ../.env
     environment:
       - LANG=ja_JP.UTF-8
       - TZ=Asia/Tokyo
-      - GITHUB_TOKEN=${GITHUB_TOKEN}
-      - GITHUB_PERSONAL_ACCESS_TOKEN=${GITHUB_TOKEN}
     user: node
